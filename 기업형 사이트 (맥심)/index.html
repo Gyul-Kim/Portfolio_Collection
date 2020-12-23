@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>커피는 역시 Maxim</title>
+    <link rel="stylesheet" href="maincss/main.css">
+    <link rel="stylesheet" href="common/css/comcss.css">
+    <link rel="stylesheet" href="maincss/rsslider.css">
+    <link rel="stylesheet" href="maincss/swiper.min.css">
+    
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    
+    
+
+    <script src="common/js/gnb.js"></script>
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <script src="mainjs/move.js"></script>
+    <script src="mainjs/swiper.min.js"></script>
+    <script src="mainjs/mainpopup.js"></script>
+    <script src="mainjs/select.js"></script>
+    
+     <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background-image: url(images/content3_bg.jpg)
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+   <!-- 공지, 이벤트 팝업 -->
+     
+     <div id="showimage" style="z-index:99;position:absolute;width:322px;left:100px;top:150px;">
+  <script>
+    function closeWin(){
+       var chk = document.getElementById('Notice')
+       if ( chk.checked ) {
+             setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+        }
+    }
+   if ( getCookie( "Notice" ) == "done" ) {
+       hidebox();
+   }
+ </script>
+    <div>
+          <img src="popup/pop_up.jpg" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+    </div>
+     <div style="font-size:12px;text-align:center;color:#666;">
+       <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+     <a href="#"  onclick="closeWin();hidebox();return false;"> [close] </a>
+  </div>
+</div>
+   
+   
+ <div id="wrap">
+
+ <header id="headerWrap">
+            <div class="headerInner">
+                <div class="headerTop">
+                    <ul class="headerIcon">
+                        <li class="login"><a href="#">login</a></li>
+                        <li class="vip"><a href="#">VIP</a></li>
+                    </ul>
+                </div>
+                
+                <div class="headerBottom">
+                   <h1 id="logo">
+                       <a href="index.html"><img src="images/h1Logo1.png" alt="로고이미지"></a>
+                    </h1>
+                   
+                    <nav id="gnb">
+                        <ul class="gnbMenu">
+                            <li class="info">
+                                <a href="#">About Maxim</a>
+                                <ul class="gnbSubmenu">
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub1/sub1_1.html">Brand History</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub1/sub1_2.html">Brand Slogan</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub1/sub1_3.html">Maxim Store</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="product"><a href="#">Product</a>
+                                <ul class="gnbSubmenu">
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub2/sub2_1.html">Original</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub2/sub2_2.html">Mocha Gold</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub2/sub2_3.html">KANU</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub2/sub2_4.html">T.O.P</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://brekqkim.cafe24.com/sub2/sub2_5.html">Others</a>
+                                    </li>
+                                </ul>
+                            </li>
+                           
+                                <li class="news"><a href="#">News</a>
+                                <ul class="gnbSubmenu">
+                                    <li><a href="http://brekqkim.cafe24.com/g5/bbs/board.php?bo_table=test333">Notice</a></li>
+                                    <li><a href="http://brekqkim.cafe24.com/sub3/sub3_2.html">Media</a></li>
+                                    <li><a href="http://brekqkim.cafe24.com/sub3/sub3_3.html">Channel</a></li>
+                                </ul>
+                            </li>
+                            <li class="customer"><a href="#">Customer</a>
+                                <ul class="gnbSubmenu">
+                                    <li><a href="http://brekqkim.cafe24.com/sub4/sub4_1.html">Community</a></li>
+                                    <li><a href="http://brekqkim.cafe24.com/sub4/sub4_2.html">Service Center</a></li>
+                                </ul>
+                            </li>
+                            
+                             <li class="event"><a href="http://brekqkim.cafe24.com/sub5.html">Event</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="menuBox"></div>
+        </header>
+         
+
+        <div id="visual">
+            <div class="gallery">
+                <ul>
+                    <li class="link1"><a href="#"><img src="images/main_visual1.jpg" alt="메인비쥬얼1"></a></li>
+                    <li class="link2"><a href="#"><img src="images/main_visual2.jpg" alt="메인비쥬얼2"></a></li>
+                    <li class="link3"><a href="#"><img src="images/main_visual3.jpg" alt="메인비쥬얼3"></a></li>
+                    <li class="link4"><a href="#"><img src="images/main_visual4.jpg" alt="메인비쥬얼4"></a></li>
+                    <li class="link5"><a href="#"><img src="images/main_visual5.jpg" alt="메인비쥬얼5"></a></li>
+                </ul>
+            </div>
+            <div class="dock">
+                <span class="mbutton btn1"></span>
+                <span class="mbutton btn2"></span>
+                <span class="mbutton btn3"></span>
+                <span class="mbutton btn4"></span>
+                <span class="mbutton btn5"></span>
+                <span class="mbutton btn6"></span>
+            </div>
+        </div>
+        
+        <article id="contents">
+            <h2 class="hidden">콘텐츠영역</h2>
+            
+            <section class="maximInfo">
+            <h3 class="hidden">섹션영역</h3>
+            
+            <div class="infoInner">
+             <div class="infoLeft">
+                <img src="images/content1_history.jpg" alt="맥심역사">
+                </div>
+                
+            <div class="infoRight"> 
+                <p><span class="title">Maxim </span><span class="is">Is...</span>
+                 <span class="slogan">맥심은 늘 여러분과 함께합니다</span>
+                </p>
+              
+              
+                
+                   <div class="txtBackground">
+                       <p>
+                        <span class="m1">
+                        <span class="year">1980</span>년 발매된 이후로 동서식품의 브랜드 No.1 커피 맥심. <span class="m2">맥심은 커피전문가의 노하우로 고품질의 커피 본연의 맛과 향을 즐길 수 있는 커피입니다.</span> 
+                
+                        <span class="m3">맥심은 일상 속 작은 휴식과 여유이며, 새로운 기운을 불어 넣어줍니다.</span> <span class="m4">마음과 마음이 이어지는 맥심의 행복으로 여러분을 초대합니다.</span>
+                        </span>
+                       </p>
+                    </div>
+                    
+                    </div>
+                    </div>   
+                </section>
+            
+            
+            <section class="maximMedia">
+                <div class="mediaWrap">
+                   <div class="mediaTop">
+                        <h3>Maxim Media</h3>
+                        <p class="slogan">이젠 유튜브에서도 맥심을 감상하세요</p>
+                        
+                    </div>
+                      
+                    <div class="mediaBottom">
+                        <p>
+                           There's comfort 
+                            <span class="m1">in my coffee cup</span>
+
+                        </p>
+                           
+                            <div class="videoWrap">
+                            <a href="#">more+</a>
+                               <div class="video">
+                                <video autoplay loop controls width="560" height="315">
+                                    <source src="video/kanu_signature_tour_intro.mp4" type="video/mp4">
+                                </video>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+            </section>
+            
+            <section class="maximProduct">
+                <div class="productWrap">
+                    <h3><a href="#">Maxim Product</a></h3>
+                    <p>맥심의 신선한 제품과 함께하세요</p>
+                    <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<img src="images/product01.png" alt="제품1">
+      </div>
+      <div class="swiper-slide">
+      	<img src="images/product02.png" alt="제품2">
+      </div>
+      <div class="swiper-slide">
+      	<img src="images/product03.png" alt="제품3">
+      </div>
+      <div class="swiper-slide">
+      	<img src="images/product04.png" alt="제품4">
+      </div>
+      <div class="swiper-slide">
+      	<img src="images/product05.png" alt="제품5">
+      </div>
+      <div class="swiper-slide">
+      	<img src="images/product06.png" alt="제품6">
+      </div>
+      <div class="swiper-slide">
+      	<img src="images/product07.png" alt="제품7">
+      </div>
+      <div class="swiper-slide">
+      	<img src="images/product08.png" alt="제품8">
+      </div>
+      
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>    
+                    
+                    
+                </div>
+            </section>
+            
+            <section class="maximNews">
+               <div class="newsWrap">
+                <h3>Maxim News</h3>
+                <p class="slogan">맥심의 특별한 소식을 만나보세요</p>
+                <p class="more"><a href="http://brekqkim.cafe24.com/sub3/sub3_1.html">more</a></p>
+                
+                <div class="notice">
+                    <div class="depth0">
+                    	<p>
+                    		<span class="no">No</span><span class="date">날짜</span><span class="info">제목</span>
+						</p>
+					</div>
+                   
+                    
+                  		<p class="depth1">
+                            <a href="#">
+                            <span span class="no">127</span><span class="date">2019.05.15</span><span class="info">동서식품, 제20회 '맥심커피배 입신최강전' 시상식 개최...</span></a>
+						</p>
+                        <p class="depth1">
+                            <a href="#"><span class="no">126</span><span class="date">2019.05.15</span><span class="info">
+								동서식품, '맥심 티오피 심플리스무스 로스티' 2종 출시</span></a>
+                        </p>
+                        <p class="depth1">
+                            <a href="#"><span class="no">125</span><span class="date">2019.04.24</span><span class="info">
+								동서식품, '제20회 맥심커피배 입신최강전' 결승 2국, 이동훈...</span></a>
+                        </p>
+                        <p class="depth1">
+                            <a href="#"><span class="no">124</span><span class="date">2019.04.17</span>
+								<span class="info">동서식품, 신제품 맥심 원두커피 8종 출시</span></a>
+                        </p>
+                        <p class="depth1">
+                            <a href="#"><span class="no">123</span><span class="date">2019.03.18</span>
+								<span class="info">동서식품, 봄 한정판 '맥심 카투 스프링 블렌드 아메리카노' 출시</span> </a>
+                        </p>
+                    
+                </div>
+                </div>
+            </section>
+        </article>
+        
+ <footer id="footerWrap">
+
+    
+            <div class="footerInner">
+                <div class="footerLeft">
+                    <div class="footerLogo">
+                        <a href="index.html">
+                            <img src="images/footerlogo.jpg" alt="푸터로고">
+                        </a>
+                    </div>
+                    <ul class="footerSns">
+                        <li><a href="https://www.instagram.com/maxim_coffee_mix/" target="_blank">인스타</a></li>
+                        <li><a href="https://www.facebook.com/maximcoffeemix/" target="_blank">페이스북</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCbyV_HczPmqn2LthdcBIl2Q" target="_blank">유튜브</a></li>
+                    </ul>
+                </div>
+                <div class="footerMid">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+                    
+                    <div class="footerTxt">
+                    	<p>서울시 마포구 도화동 546번지 동서빌딩
+                    	<span class="number">ㅣ 1588-2233</span>
+                        <span class="copy">
+                         2019 DONG SUH FOOD. ALL RIGHTS RESERVED.
+                        </span>
+                 		</p>                        
+                 	</div>                     
+   				</div>
+               
+               <div class="footerRight">
+               		<div class="select">
+						<a href="javascript:void(0);" class="arrow">패밀리사이트</a>
+						<ul class="aList">
+							<li><a href="https://www.dongsuh.co.kr/2017/00_main/main.asp" target="_blank">동서식품</a></li>
+							<li><a href="http://www.maximkanu.co.kr/beachcafe/" target="_blank">맥심 카누</a></li>
+							<li><a href="https://www.facebook.com/maximtoptop?fref=ts" target="_blank">맥심 T.O.P</a></li>
+							<li><a href="http://www.tassimo.co.kr/" target="_blank">맥심 타시모</a></li>
+						</ul>
+					</div>
+				</div>                               
+            </div>
+        </footer>        
+ </div>
+ 
+   <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>

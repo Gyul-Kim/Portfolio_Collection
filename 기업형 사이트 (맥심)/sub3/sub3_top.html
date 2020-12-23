@@ -1,0 +1,32 @@
+    <link rel="stylesheet" href="common/css/sub3common.css">
+     <script type="text/javascript">
+      $(document).ready(function() {
+          var num = '<?=$_GET['num']?>';
+          
+          if(num==1){
+              $('.topNav .menu1 a').addClass('current');
+          }else if(num==2){
+              $('.topNav .menu2 a').addClass('current');
+          }else if(num==3){
+              $('.topNav .menu3 a').addClass('current');
+          }else if(num==4){
+              $('.topNav .menu4 a').addClass('current');
+          }
+       });
+</script>
+
+
+    <div class="main">
+                 <img src="common/image/sub3visual.jpg" alt="서비비쥬얼">
+            </div>
+            
+            <div class="container">          
+               <div class="topNav">
+                   <h3>Maxim Media</h3>
+                   <ul>
+                       <li class="menu1"><a href="#">Notice</a></li>
+                       <li class="menu2"><a href="#">Maxim CF</a></li>
+                       <li class="menu3"><a href="#">Channel</a></li>
+                    </ul>
+                </div>
+

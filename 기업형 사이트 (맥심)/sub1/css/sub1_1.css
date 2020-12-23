@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body,input,textarea,select,button,table,p{font-family: 'Noto Sans KR', sans-serif; color: #333; }
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol,li{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+table{border-collapse: collapse}
+header,footer,nav,section,article,hgroup,aside{display: block}
+p,li,dd{line-height: 1.5em;text-align: justify}
+.hidden{position: absolute;width: 1px; height: 1px; overflow: hidden; left: -1000%; color: #fff}
+    
+#container{width: 100%; margin-top:105px;}
+#container .contInner{width:1100px; height: 400px; margin: 0 auto; position: relative; background-image: url(../image/content1_1/sub1_1_ban.png);}
+
+#container .contInner .titleArea{width: 800px; height: 20px; ;color: #333; float: right;}
+#container .contInner .titleArea .lineMap{float: right; margin-right: 10px; font-size: 13px; margin-top: 10px;}
+#container .contInner .titleArea .lineMap span{}
+#container .contInner .titleArea .lineMap strong{color:#ccc;}
+
+#container .navInner{width: 100%;}
+#container .navInner .topNav{width: 1100px; height: 50px; margin: 0 auto;}
+#container .navInner .topNav ul{float: left; margin-left: 270px;}
+#container .navInner .topNav ul li{float: left; margin-left: 50px; margin-top: 12px;}
+#container .navInner .topNav ul li a{display: block; border-bottom: 3px solid #f6f5ef;}
+
+#container .navInner .topNav ul li a:hover{color: #e60013;}
+#container .navInner .topNav ul .menu1{}
+#container .navInner .topNav ul .menu2{}
+#container .navInner .topNav ul .menu3{}
+
+/*history contents*/
+#contents{width: 1100px; margin: 0 auto;}
+
+#contents .bgbox1{width: 830px; height: 220px; margin-top: 30px; border-bottom: 2px solid #f6f5ef; margin-left: 150px;}
+#contents .bgbox1 .leftPhoto{float: left; width: 420px; height: 220px;}
+#contents .bgbox1 .leftPhoto img{width: 300px; height: 210px;}
+#contents .bgbox1 .rightHistory{float: left; width: 410px; height: 220px;}
+#contents .bgbox1 .rightHistory p{display: block; font-size: 15px;}
+#contents .bgbox1 .rightHistory p span{display: block;}
+#contents .bgbox1 .rightHistory p .year{display: block; font-size:19px; font-weight: 300; text-align:left; letter-spacing: 5px; padding-bottom: 10px;}
+
+#contents .bgbox2{width: 830px; height: 220px; margin-top: 30px;border-bottom: 2px solid #f6f5ef;margin-left: 150px;}
+#contents .bgbox2 .leftHistory{}
+#contents .bgbox4 .rightPhoto{float: left; width: 420px; height: 220px;}
+#contents .bgbox2 .rightPhoto img{width: 300px; height: 210px;}
+#contents .bgbox2 .leftHistory{float: left; width: 410px; height: 220px;}
+#contents .bgbox2 .leftHistory p{display: block; font-size: 15px; margin-bottom: ;}
+#contents .bgbox2 .leftHistory p span{display: block;}
+#contents .bgbox2 .leftHistory p .year{display: block; font-size:19px; font-weight: 300; text-align:left; letter-spacing: 5px; padding-bottom: 15px;}
+
+#contents .bgbox3{width: 830px; height: 220px;margin-top: 30px;border-bottom: 2px solid #f6f5ef;margin-left: 150px;}
+#contents .bgbox3 .leftPhoto{float: left; width: 420px; height: 220px}
+#contents .bgbox3 .leftPhoto img{width: 300px; height: 210px;}
+#contents .bgbox3 .rightHistory{float: left; width: 410px; height: 220px;}
+#contents .bgbox3 .rightHistory p{display: block; font-size: 15px;}
+#contents .bgbox3 .rightHistory p span{display: block;}
+#contents .bgbox3 .rightHistory p .year{display: block; font-size:19px; font-weight: 300; text-align:left; letter-spacing: 5px; padding-bottom: 10px;}
+
+#contents .bgbox4{width: 830px; height: 220px;margin-top: 30px;border-bottom: 2px solid #f6f5ef;margin-left: 150px;}
+#contents .bgbox4 .leftHistory{float: left;}
+#contents .bgbox4 .rightPhoto{float: left; width: 420px; height: 220px;}
+#contents .bgbox4 .rightPhoto img{width: 300px; height: 210px;}
+#contents .bgbox4 .leftHistory{float: left; width: 410px; height: 220px;}
+#contents .bgbox4 .leftHistory p{display: block; font-size: 15px;}
+#contents .bgbox4 .leftHistory p span{display: block;}
+#contents .bgbox4 .leftHistory p .year{display: block; font-size:19px; font-weight: 300; text-align:left;  letter-spacing: 5px;padding-bottom: 20px;}
+
+
+#contents .bgbox5{width: 830px; height: 220px;margin-top: 30px;border-bottom: 2px solid #f6f5ef;margin-left: 150px;}
+#contents .bgbox5 .leftPhoto{float: left; width: 420px; height: 250px; margin-bottom: 20px;}
+#contents .bgbox5 .leftPhoto img{width: 300px; height: 210px;}
+#contents .bgbox5 .rightHistory{float: left; width: 410px; height: 220px;}
+#contents .bgbox5 .rightHistory p{display: block; font-size: 15px;}
+#contents .bgbox5 .rightHistory p span{text-indent: 10px; display: block;}
+#contents .bgbox5 .rightHistory p .year{display: block; font-size:19px; font-weight: 300; text-align:left; letter-spacing: 5px; padding-bottom: 15px;}

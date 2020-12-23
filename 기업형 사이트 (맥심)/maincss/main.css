@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*reset*/
+
+/* base */
+body,input,textarea,select,button,table{font-family: 'Noto Sans KR', sans-serif;color: #333; }
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol,li{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+table{border-collapse: collapse}
+header,footer,nav,section,article,hgroup,aside{display: block}
+p,li,dd{line-height: 1.5em;text-align: justify}
+.hidden{position: absolute;width: 1px; height: 1px; overflow: hidden; left: -1000%; color: #fff}
+
+/* a-style */
+a{color:#333;text-decoration:none}
+a:hover,a:active,a:focus{color:#333;text-decoration:none}
+
+/*layout*/
+#wrap{width:100%; background-color: #fff;}
+
+
+/*header*/
+
+/*visual*/
+#visual{width:1500px; height:660px; overflow:hidden; position: relative; margin: 0 auto;}
+#visual .gallery{width: 1100px; height: 660px;margin-top: 105px;overflow: hidden; }
+#visual .gallery ul{position: absolute;right: 50%; margin-right:-750px;}
+#visual .gallery ul li{}
+#visual .gallery ul li a{}
+
+#visual .dock{position: absolute; top: 630px; left: 750px;}
+#visual .dock .mbutton{background:url(../images/bnt.png) 0 0 no-repeat; display: block; width: 17px; height: 17px; float: left; margin-right: 5px;}
+#visual .dock .btn6{background:url(../images/stop.png)}
+
+
+
+
+/*contents*/
+#contents{width: 100%;margin-top: 50px;}
+
+
+
+
+/*section1*/
+#contents .maximInfo{width:100%; height: 450px; margin-left: 40px;}
+#contents .maximInfo .infoInner{width: 1100px; height: 450px; margin:0 auto;}
+
+#contents .maximInfo .infoInner .infoLeft{float: left; width:40%; height: 450px;}
+#contents .maximInfo .infoInner .infoLeft img{width: 412px; height: 412px;}
+
+#contents .maximInfo .infoInner .infoRight{width:60%; height: 450px;float: left;}
+
+#contents .maximInfo .infoInner p{}
+#contents .maximInfo .infoInner .infoRight p .title{color: #e60013;font-size:27px;}
+#contents .maximInfo .infoInner .infoRight p .is{color: #333; font-size:27px;}
+
+#contents .maximInfo .infoInner .infoRight p .slogan{color: #333;font-size: 15px; margin-top:10px; display: block;}
+
+
+#contents .maximInfo .infoInner .infoRight .txtBackground{ width: 600px; height: 300px; background-image: url(../images/content1_bgi3.jpg); margin-top: 50px;}
+#contents .maximInfo .infoInner .infoRight .txtBackground p{color: #333;color: #fff; margin-left: 20px;;}
+#contents .maximInfo .infoInner .infoRight .txtBackground p .m1{display: block;font-size: 13px; padding-top: 20px;}
+
+#contents .maximInfo .infoInner .infoRight .txtBackground p .m1 .year{font-size: 31px;}
+#contents .maximInfo .infoInner .infoRight .txtBackground p .m2{display: block;}
+#contents .maximInfo .infoInner .infoRight .txtBackground p .m3{display: block; margin-top: 20px;}
+ 
+#contents .maximInfo .infoWrap p .m1{display: block;font-size: 13px; margin-top:80px;}
+#contents .maximInfo .infoWrap p .m1 .year{font-size:31px;}
+#contents .maximInfo .infoWrap p .m2{display: block; font-size: 13px;}
+#contents .maximInfo .infoWrap p .m3{display: block; margin-top:10px;}
+#contents .maximInfo .infoWrap p .m4{display: block;}
+
+
+
+
+/*section2*/
+#contents .maximMedia{width: 100%; height: 500px;margin-top: 50px; color: #333;}
+#contents .maximMedia .mediaWrap{
+width:1100px;height:500px;margin:0 auto;}
+#contents .maximMedia .mediaWrap .mediaTop{width: 1100px; height:80px;}
+#contents .maximMedia .mediaWrap .mediaTop h3{padding-left: 480px; font-size: 27px; color: #e60013; margin: 0 auto; display: block; padding-top:10px;}
+#contents .maximMedia .mediaWrap .mediaTop .slogan{font-size: 15px; display: block; padding-left: 430px; margin-top: 10px; }
+
+
+#contents .maximMedia .mediaWrap .mediaBottom{width:1100px; height: 420px}
+#contents .maximMedia .mediaWrap .mediaBottom p{display: block;font-size: 61px;width: 300px;float: left; margin-left: 75px; margin-top: 90px;font-family: 'Mr De Haviland', cursive;
+}
+#contents .maximMedia .mediaWrap .mediaBottom p .m1{display: block;font-size: 61px;width: 300px;float: left; margin-left: 100px;font-family: 'Mr De Haviland', cursive;
+}
+#contents .maximMedia .mediaWrap .mediaBottom p .m2{display: block; font-size:13px; font-family: 'Noto Serif KR', serif; margin-left:100px;}
+
+#contents .maximMedia .mediaWrap .mediaBottom .videoWrap{background-image: url(../images/content2_bg2.jpg); width:600px; height:370px; float: right; margin-right: 30px; margin-top: 20px;}
+#contents .maximMedia .mediaWrap .mediaBottom .videoWrap a{color:#fff; font-size: 13px; float: right; margin-right: 20px; margin-top: 20px;}
+#contents .maximMedia .mediaWrap .mediaBottom .videoWrap .video{width: 600px; height: 370px; margin-top: 40px; margin-left: 20px;}
+
+
+
+
+
+/*section3*/
+#contents .maximProduct{width: 100%;display: block; margin-top:50px; color:#fff; background-color: #20160d;}
+#contents .maximProduct .productWrap{background: url(../images/content3_bg.jpg) 0 0 repeat-x; width: 1100px; height: 410px; margin: 0 auto;}
+#contents .maximProduct .productWrap h3{padding-top: 20px; padding-left: 480px;}
+#contents .maximProduct .productWrap h3 a{color:#e60013; display: block; font-size:27px; margin: 0 auto;}
+
+#contents .maximProduct .productWrap p{padding-left: 460px; font-size: 15px; margin-top: 10px; color: #fff;}
+
+#productLineinner{width: 1100px; margin: 0 auto; position: relative;}
+#productLineinner .product1{width: 1000px; height: 250px; margin: 0 auto; overflow: hidden; margin-top: 30px;}
+#productLineinner .product1 ul{}
+#productLineinner .product1 ul li{float: left; padding-left: 50px;}
+#productLineinner .product1 ul li a{}
+#productLineinner .product1 ul li a img{}
+
+#productLineinner .btnFoodbox{}
+#productLineinner .btnFoodbox btn{display: block; width: 20px; height: 38px; overflow:hidden; position: absolute;}
+#productLineinner .btnFoodbox .m1{background-image: url(../images/wleft-arrow2.png)} 
+#productLineinner .btnFoodbox .m2{background-image: url(../images/wright-arrow2.png)}
+
+
+
+
+/*section4*/
+#contents .maximNews{width: 1100px; height:460px; display: block;color: #666; margin-top: 50px; margin-bottom: 50px; background-color:#fff ; margin: 0 auto;}
+#contents .maximNews .newsWrap{width: 1100px; height: 460px; margin-top: 50px;}
+#contents .maximNews .newsWrap h3{margin-top: 50px;padding-top: 20px; padding-left: 480px;font-size: 27px; display: block; margin: 0 auto; color: #e60013;}
+
+#contents .maximNews .newsWrap .slogan{font-size: 15px; font-size: 15px; display: block; padding-left: 455px; margin-top:10px; margin-bottom: 20px;}
+#contents .maximNews .newsWrap .more{float: right; margin-right: 100px;}
+#contents .maximNews .newsWrap .more a{color:#666; font-size: 15px;}
+
+#contents .maximNews .newsWrap .notice{width:850px;; margin-top: 50px; margin-left: 150px; border-top: 1px solid #888B8D; border-bottom: 1px solid #888B8D;}
+
+
+/*notice*/
+#contents .maximNews .newsWrap .notice .depth0{width: 850px; height: 40px;background-color: #f6f5ef;}
+#contents .maximNews .newsWrap .notice .depth0 p{width: 850px; height: 40px; line-height: -30px; }
+#contents .maximNews .newsWrap .notice .depth0 .no{margin-left: 80px; }
+#contents .maximNews .newsWrap .notice .depth0 .date{margin-left: 90px; }
+#contents .maximNews .newsWrap .notice .depth0 .info{margin-left: 300px; padding-bottom: 10px;padding-top: 10px;}
+/*notice_info*/
+#contents .maximNews .newsWrap .notice .depth1{margin: 20px 0 20px 50px;}
+#contents .maximNews .newsWrap .notice .depth1 a  .no{margin-left: 30px;}
+#contents .maximNews .newsWrap .notice .depth1 a .date{margin-left:60px;}
+#contents .maximNews .newsWrap .notice .depth1 a .info{margin-left: 90px;}
+#contents .maximNews .newsWrap .notice .depth1 a .view{margin-left: 50px;}
+
+
+
+#contents .maximNews .newsWrap .notice ul li{margin-top: 20px; margin-bottom: 20px;}
+#contents .maximNews .newsWrap .notice ul li a{color: #666; font-size: 15px; margin: 0 auto;  letter-spacing: 2px;}
+#contents .maximNews .newsWrap .notice ul li a span{margin-right:15px; letter-spacing: 2px;}
+
+
+
+
+/*footer*/
+
+

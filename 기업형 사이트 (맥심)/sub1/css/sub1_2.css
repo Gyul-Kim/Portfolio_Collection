@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body,input,textarea,select,button,table,p{font-family: 'Noto Sans KR', sans-serif; color: #333; }
+*{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+ul,ol,li{list-style:none}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal}
+table{border-collapse: collapse}
+header,footer,nav,section,article,hgroup,aside{display: block}
+p,li,dd{line-height: 1.5em;text-align: justify}
+.hidden{position: absolute;width: 1px; height: 1px; overflow: hidden; left: -1000%; color: #fff}
+
+
+#container{width: 100%; margin-top:105px; background-clip: #fcfdfe}
+#container .contInner{width:1100px; height: 400px; margin: 0 auto; position: relative; background-image: url(../image/content1_2/sub1_2ban.png);}
+
+#container .contInner .titleArea{width: 800px; height: 20px; ;color: #fff; float: right;}
+#container .contInner .titleArea .lineMap{float: right; margin-right: 10px; font-size: 13px; margin-top: 10px;}
+#container .contInner .titleArea .lineMap span{}
+#container .contInner .titleArea .lineMap strong{color:#ccc;}
+
+#container .navInner{width: 100%;}
+#container .navInner .topNav{width: 1100px; height: 50px; margin: 0 auto;}
+#container .navInner .topNav ul{float: left; margin-left: 270px;}
+#container .navInner .topNav ul li{float: left; margin-left: 50px; margin-top: 12px;}
+#container .navInner .topNav ul li a{display: block;border-bottom: 3px solid #f6f5ef;}
+
+#container .navInner .topNav ul li a:hover{color: #e60013;}
+#container .navInner .topNav ul .menu1{}
+#container .navInner .topNav ul .menu2{}
+#container .navInner .topNav ul .menu3{}
+
+#contents{width: 1100px; margin:0 auto;}
+#contents h3{margin-top: 15px; margin-left: 425px; font-size: 31px; font-weight: 400;}
+#contents .slogan{font-size 21px; margin-left:395px;}
+#contents .bgbox1{margin-top: 25px; }
+#contents .bgbox1 p{font-size:17px; margin-top: 25px; padding-left: 100px;}
+#contents .bgbox1 p .m1{display: block; color: #e60013}
+#contents .bgbox1 p .m2{display: block;}
+#contents .bgbox1 p .m3{display: block;}
+
+#contents .bgbox2{margin-top: 50px; width: 1100px;}
+#contents .bgbox2 .photo{float: left; margin-left: 85px;}
+#contents .bgbox2 p{font-size: 17px;clear: both; padding-top: 15px;  padding-left: 100px;}
+#contents .bgbox2 p .m1{display: block;}
+#contents .bgbox2 p .m2{color:#e60013;}
+#contents .bgbox2 p .m3{display: block;}
+#contents .bgbox2 p .m4{display: block;}
+#contents .bgbox2 p .m5{display: block; font-size:15px; padding-top: 50px; color:#999}
+#contents .bgbox2 p .m6{display: block; font-size:13px; color:#999}
+
+#contents .bgbox3{margin-top: 50px;}
+#contents .bgbox3 .photo{float: left; margin-left: 195px;}
+#contents .bgbox3 p{font-size: 17px;clear: both; padding-top: 15px; padding-left: 100px;}
+
+#contents .bgbox3 p .m1{}
+#contents .bgbox3 p .m2{color:#e60013;}
+#contents .bgbox3 p .m3{display: block;}
+#contents .bgbox3 p .m4{display: block;}
+
+
+#contents .bgbox4{margin-top: 50px; margin-bottom: 50px;}
+#contents .bgbox4 .photo{margin-left: 395px;}
+#contents .bgbox4 p{display: block; font-size: 17px;}
+#contents .bgbox4 p .m1{padding-top: 20px; display: block; margin-left: 450px;}
+#contents .bgbox4 p .m2{display: block;margin-left:435px;}
+#contents .bgbox4 p .m3{padding-top: 10px; display: block; margin-left:445px;}
+#contents .bgbox4 p .m4{display: block; margin-left: 350px;}
+#contents .bgbox4 p .m5{padding-top: 10px; display: block; margin-left: 375px;}
+#contents .bgbox4 p .m6{display: block;margin-left:410px;}
+#contents .bgbox4 p .m7{display: block;margin-left:350px;}
