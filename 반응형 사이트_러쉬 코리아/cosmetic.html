@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>LUSH KOREA</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+    <!-- 화면에 앱을 추가하면 페이지를 전체 화면으로 실행(애플)-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- 파비콘-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- 웹 아이콘 설치 -->
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+    <!-- 로딩시 이미지 -->
+    <link rel="apple-touch-startup-image" href="startup.png">
+
+    <!-- 기본 css -->
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--  fontawesome css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+
+    <!--  rsslider css-->
+    <link rel="stylesheet" href="css/rsslider.css">
+
+    <!--  googlefont css-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+    <!--  jquery-1.8.3-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!--  jquery-migrate-1.4.1(필수)-->
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <!--  prefixfree js (별도 설명-필수)-->
+    <script src="js/prefixfree.min.js"></script>
+    <!--one page scroll js-->
+    <link rel="stylesheet" href="js/onepage-scroll.css">
+    <link rel="stylesheet" href="js/animate.css">
+    <script src="js/jquery.onepage-scroll.min.js.js"></script>
+    <script src="js/jquery.animatecss.min.js"></script>
+    <!--<script src="js/box_animate.js"></script> 작동오류로 body내부로 위치 변경-->
+    <!--hover효과 스크립트-->
+    <script src="js/thumbnail.js"></script>
+
+    <!-- 반응형 슬라이드 스크립트 -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/responsiveslide_call.js"></script>
+    <script src="js/m_mainvisual_slide.js"></script>
+
+    <!--이미지 사이즈 조절, 이미지 변경, top scroll-->
+    <script src="js/move.js"></script>
+    <!--모바일 검색창 나타내기-->
+    <script src="js/search_m.js"></script>
+    <!--w:768이하 환경 비디오loop제어 스크립트-->
+    <script src="js/video_loop.js"></script>
+    <!--detail view-->
+    <script src="js/detailview.js"></script>
+    <!--popup-->
+    <script language="javascript" src="popup/mainpopup.js"></script>
+
+
+    <!-- 모바일웹에서 주소창 사라지기 -->
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener('load', function() {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        } catch (e) {}
+        // ]]>
+
+    </script>
+
+    <!--IE 하위 호환성(필수) -->
+    <!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!--접근성을 위해서 skipNav 권장 -->
+    <div id="skipNav">
+        <a class="hidden" href="#content">본문바로가기</a>
+        <a class="hidden" href="#gnb">네비게이션바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="headerWrap">
+            <div class="headerInner">
+                <div class="headerTop">
+                    <div class="headerIcons">
+                        <a href="#" class="searchIcon"><i class="fas fa-search" aria-hidden="true"></i></a>
+                        <div class="iconInner">
+                            <a href="#" class="stores"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a>
+                            <a href="#" class="login"><i class="fas fa-user" aria-hidden="true"></i></a>
+                            <a href="#" class="insta"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="links">
+                            <a href="#">이용약관</a>
+                            <a href="#">개인정보처리방침</a>
+                            <a href="#">이메일 무단수집거부</a>
+                        </div>
+                    </div>
+                    <h1 id="logo">
+                        <a href="lushkorea.html">
+                            <img class="logo_pc" src="image/lush_logo_pc.png" alt="로고이미지PC버전">
+                            <img class="logo_m" src="image/lush_logo_m.png" alt="로고이미지모바일버전">
+                        </a>
+                    </h1>
+                    <div class="searchPc">
+                        <div class="searchBox">
+                            <form action="#" id="search" method="get">
+                                <fieldset>
+                                    <legend>
+                                        검색창
+                                    </legend>
+                                    <div class="bgSearch">
+                                        <div class="wrapBox">
+                                            <input type="text" name="input_search" class="typeText" title="검색어 입력" maxlength="255" placeholder="검색어를 입력하세요">
+                                            <div class="submitBtn">
+                                                <input type="submit" id="Btn" class="typeBtn" title="검색" value="검색">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="searchMobile">
+                        <div class="searchBoxM">
+                            <form action="#" id="search" method="get">
+                                <fieldset>
+                                    <legend>
+                                        검색창
+                                    </legend>
+                                    <div class="bgSearch">
+                                        <div class="wrapBox">
+                                            <input type="text" name="input_search" class="typeText" title="검색어 입력" maxlength="255" placeholder="검색어를 입력하세요">
+                                            <input type="submit" id="Btn" class="typeBtn" title="검색" value="검색">
+                                        </div>
+
+                                        <div class="closeBtn"><i class="fas fa-times" aria-hidden="true"></i></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <a href="#page1" class="active">LUSH TWILIGHT</a>
+                    <a href="#page2" class="active">LUSH ROCKET SCIENCE</a>
+                    <a href="#page3" class="active">LUSH DRAGONS EGG</a>    
+                </nav>
+                <div class="headerBottom">
+                    <nav id="gnb">
+                        <ul>
+                            <li><a href="#">WHAT'S NEW</a></li>
+                            <li><a href="#">BEST SELLER</a></li>
+                            <li><a href="#">BRAND</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="contentsPc">
+            <div class="container">
+                <div class="page" id="page1">
+                    <div class="videoBox videoBox1">
+                        <video autoplay loop muted src="video/LUSH%20TWILIGHT.mp4" id="video1" ></video>
+                        <div class="detailView" id="detailView1">
+                            <div class="detailInner">
+                                <div class="detailImgBox">
+                                    <img src="image/lush%20twilight%20bomb.png" alt="제품이미지">
+                                    <p><span>BEST</span>러쉬 트와일라잇</p>
+                                    <p>15,000원대</p>
+                                </div>
+                                <div class="detailTxtBox">
+                                    <p class="detailTit">"최고의 <span class="txtColor">No.1 배쓰 밤</span>"</p>
+                                    <p class="detailTit">이럴 때 써보세요</p>
+                                    <p class="detailTxt"><span class="txtColor">베르가못과 레몬의 향</span><br>특유의 부드러운 향을 느끼고 싶을 때</p>
+                                    <p class="detailTxt"><span class="txtColor">로켓으로 동심으로 회귀</span><br>머리 아픈 날, 스트레스를 풀고자 할 때</p>
+                                    <p class="detailTxt"><span class="txtColor">로켓의 우주모험</span><br>힘차게 날아오르는 로켓을 느끼고 싶을 때</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxWrap">
+                        <div class="box box-left">
+                            <img src="image/lush%20twilight%20bomb.png" alt="러쉬 트와일라잇 배쓰 밤">
+                        </div>
+                        <div class="box box-right">
+                            <p class="title">BEST</p>
+                            <p class="adTxt">라벤더 오일의 편안한 향기</p>
+                            <p class="prodTit">러쉬 트와일라잇</p>
+                            <p class="engTit">If sleep is evading you, this will help get you ready for a good night's rest</p>
+                            <a href="javascript:void(0)" id="detailBtn1" class="detailBtn">
+                                <span class="txt">DETAIL VIEW ></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" id="page2">
+                    <div class="videoBox videoBox2">
+                        <video autoplay loop muted src="video/LUSH%20ROCKET%20SCIENCE.mp4"></video>
+                        <div class="detailView" id="detailView2">
+                            <div class="detailInner">
+                                <div class="detailImgBox">
+                                    <img src="image/lush%20rocket%20science.png" alt="제품이미지2">
+                                    <p><span>NEW</span>러쉬 로켓 사이언스</p>
+                                    <p>2.6g / 35,000원대</p>
+                                </div>
+                                <div class="detailTxtBox">
+                                    <p class="detailTit">"새로운 <span class="txtColor">러쉬의 배쓰 밤</span>"</p>
+                                    <p class="detailTit">이럴 때 써보세요</p>
+                                    <p class="detailTxt"><span class="txtColor">베르가못과 레몬의 향</span><br>특유의 부드러운 향을 느끼고 싶을 때</p>
+                                    <p class="detailTxt"><span class="txtColor">로켓으로 동심으로 회귀</span><br>머리 아픈 날, 스트레스를 풀고자 할 때</p>
+                                    <p class="detailTxt"><span class="txtColor">로켓의 우주모험</span><br>힘차게 날아오르는 로켓을 느끼고 싶을 때</p>
+                                   
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="boxWrap">
+                        <div class="box box-left">
+                            <img src="image/lush%20rocket%20science.png" alt="러쉬 로켓 사이언스">
+                        </div>
+                        <div class="box box-right">
+                            <p class="title">NEW</p>
+                            <p class="adTxt">우주선을 타고 상큼하게 떠나는 여행</p>
+                            <p class="prodTit">러쉬 로켓 사이언스</p>
+                            <p class="engTit">Blast off to another world with this mix of uplifting bergamot and lemon</p>
+                            <a href="#" id="detailBtn2" class="detailBtn">
+                                <span class="txt">DETAIL VIEW ></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" id="page3">
+                    <div class="videoBox videoBox3">
+                        <video autoplay loop muted src="video/LUSH%20DRAGON%20EGG.mp4" id="video3"></video>
+                        <div class="detailView" id="detailView3">
+                            <div class="detailInner">
+                                <div class="detailImgBox">
+                                    <img src="image/lush%20dragon%20egg.png" alt="제품이미지">
+                                    <p><span>HOT</span>러쉬 드래곤스 에그</p>
+                                    <p>15,000원대</p>
+                                </div>
+                                <div class="detailTxtBox">
+                                   <p class="detailTit">"화제의 <span class="txtColor">HOT한 배쓰 밤</span>"<br>이럴 때 써보세요</p>
+                                    <p class="detailTxt"><span class="txtColor">영롱한 금빛 배쓰밤</span><br>드래곤스 에그의 찬란한 빛깔이 궁금할 때</p>
+                                    <p class="detailTxt"><span class="txtColor">레몬과 자스민향의 향연</span><br>향이 주는 편안함을 느끼고 싶을 때</p>
+                                    <p class="detailTxt"><span class="txtColor">상쾌한 하루의 시작</span><br>하루를 알차게 시작할 때</p>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxWrap">
+                        <div class="box box-left">
+                            <p class="title">HOT</p>
+                            <p class="adTxt">레몬의 상큼함과 자스민의 은은함이 한꺼번에</p>
+                            <p class="prodTit">러쉬 드래곤스 에그</p>
+                            <p class="engTit">Its citrus scents leave you feeling transformed and invigorated.</p>
+                            <a href="#" id="detailBtn3" class="detailBtn">
+                                <span class="txt">DETAIL VIEW ></span>
+                            </a>
+                        </div>
+                        <div class="box box-right">
+                            <img src="image/lush%20dragon%20egg.png" alt="드래곤스 에그">
+                        </div>
+                    </div>
+                </div>
+<!--
+                <div class="page" id="page4">
+                    <div class="videoBox videoBox4">
+                        <video autoplay loop muted src="video/main4.mp4" id="video4"></video>
+                        <div class="detailView" id="detailView4">
+                            <div class="detailInner">
+                                <div class="detailImgBox">
+                                    <img src="images/product4.png" alt="제품이미지">
+                                    <p><span>BEST</span>블러쉬 컬러 인퓨전</p>
+                                    <p>6g / 40,000원대</p>
+                                </div>
+                                <div class="detailTxtBox">
+                                    <p class="detailTit">"실패하지 않는 블러셔의 시작, <span class="txtColor">MLBB 블러셔</span>"</p>
+                                    <p class="detailTxt">한국인 피부 톤에 가장 잘 어울리는<br><span class="txtColor">10가지 #MLBB블러셔</span><br></p>
+                                    <p class="detailTxt"><span class="txtColor">청순 내추럴 룩, 분위기 있는 가을 룩</span><br>다양한 연출이 가능한 데일리 블러셔</p>
+                                    <p class="detailTxt"><span class="txtColor">뭉침 걱정 없이 가볍게 밀착</span>되는 텍스처와<br>코코넛 오일 유래 성분이 피부 편안함을 선사</p>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxWrap">
+                        <div class="box box-left">
+                            <img src="images/product4.png" alt="블러쉬 컬러 인퓨전">
+                        </div>
+                        <div class="box box-right">
+                            <p class="title">BEST</p>
+                            <p class="adTxt">실패 없는 데일리 블러셔의 시작</p>
+                            <p class="prodTit">블러쉬 컬러 인퓨전</p>
+                            <p class="engTit">BLUSH COLOUR INFUSION</p>
+                            <a href="#" id="detailBtn4" class="detailBtn">
+                                <span class="txt">DETAIL VIEW ></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" id="page5">
+                    <div class="videoBox videoBox5">
+                        <video autoplay loop muted src="video/main5.mp4" id="video5"></video>
+                        <div class="detailView" id="detailView5">
+                            <div class="detailInner">
+                                <div class="detailImgBox">
+                                    <img src="images/product5.png" alt="제품이미지">
+                                    <p><span>BEST</span>미네랄 피니싱 파우더</p>
+                                    <p>12g / 49,000원대</p>
+                                </div>
+                                <div class="detailTxtBox">
+                                    <p class="detailTit"><span class="txtColor">"No.1 루스 파우더"</span> 가루명가 로라 메르시에</p>
+                                    <p class="detailTit">메이크업 완벽 세팅 <span class="txtColor">#모공파우더</span></p>
+                                    <p class="detailTxt">미네랄 파우더가 피지 조절 및<br>모공을 조절해 <span class="txtColor">메이크업 완벽 세팅</span><br></p>
+                                    <p class="detailTxt">건조하게 느껴지지 않는<br><span class="txtColor">부드럽고 실키한 텍스처</span></p>
+                                    <p class="detailTxt"><span class="txtColor">유분기로</span> 화장이 쉽게 얼룩지는<br>피부를 위한 제품</p>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxWrap">
+                        <div class="box box-left">
+                            <img src="images/product5.png" alt="미네랄 피니싱 파우더">
+                        </div>
+                        <div class="box box-right">
+                            <p class="title">BEST</p>
+                            <p class="adTxt">메이크업 완벽 세팅 모공파우더</p>
+                            <p class="prodTit">미네랄 피니싱 파우더</p>
+                            <p class="engTit">Mineral Finishing Powder</p>
+                            <a href="#" id="detailBtn5" class="detailBtn">
+                                <span class="txt">DETAIL VIEW ></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+        <div id="contentsM">
+            <div id="visual">
+                <div class="callbacks_container">
+                    <ul id="slider4" class="rslides">
+                        <li class="mainvisual"><img src="image/Visual_01.jpg" alt="이미지1"></li>
+                        <li class="mainvisual"><img src="image/Visual_02.jpg" alt="이미지2"></li>
+                        <li class="mainvisual"><img src="image/Visual_03.gif" alt="이미지3"></li>
+                        <li class="mainvisual"><img src="image/Visual_04.jpg" alt="이미지4"></li>
+                    </ul>
+                </div>
+            </div>
+            <article id="contents">
+                <h2 class="hidden">콘텐츠영역</h2>
+                <section id="bestSeller">
+                    <h3 class="mcontTit">BEST BATH BOMB</h3>
+                    <div class="bestItems">
+                        <figure class="bestItem1">
+                            <img src="images/01.twilight.jpg" alt="트와일라잇">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                트와일라잇<br>
+                                #라벤더오일 향기
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem2">
+                            <img src="images/02.rocket_science.jpg" alt="로켓 사이언스">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                로켓 사이언스<br>
+                                #베르가못 향 # 로켓모양
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem3">
+                            <img src="images/03.dragons_egg%20.jpg" alt="드레곤스 에그">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                드래곤스 에그<br>
+                                #상큼레몬향 #자스민향
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem4">
+                            <img src="images/04.groovy%20kind%20of%20love.jpg" alt="그루비 카인드오 오브 러브">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                그루비 카인드 오브 러브<br>
+                                #다채롭고 화려한 무지개색
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem5">
+                            <img src="images/05.peach.jpg" alt="피치">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                피치<br>
+                                #복숭아 핑크빛 입욕제
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem6">
+                            <img src="images/06.collar.jpg" alt="칼라베라">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                칼라베라<br>
+                                #로맨틱 #마법의 숲
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem7">
+                            <img src="images/07.butterfly.jpg" alt="로즈 버터플라이">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                로즈 버터플라이<br>
+                                #나비모양 #보라빛향기
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem8">
+                            <img src="images/08.sakura.jpg" alt="사쿠라">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                사쿠라<br>
+                                #미모사+자스민 #벚꽃향기
+                            </figcaption>
+                        </figure>
+                        <figure class="bestItem9">
+                            <img src="images/09.big_blue.jpg" alt="빅 블루">
+                            <a href="#" class="more"><img src="images/btn_plus.png" alt="더보기"></a>
+                            <figcaption>
+                                빅 블루<br>
+                                #바닷 속 #신선한 해초
+                            </figcaption>
+                        </figure>                      
+                    </div>
+                </section>
+            </article>
+            <footer id="footerWrap">
+                <div class="footerInner">
+                    <div class="footerMenu">
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이메일 무단수집거부</a>
+                    </div>
+                    <div class="copyright">
+                        <address>러쉬 코리아 <br>서울특별시 서초구 서운로 138(서초동아타워) 6층 <br>201-81-77964 우미령 TEL 1644-2357 </address>
+                        <p>COPYRIGHT &#169; LUSH KOREA . ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <div id="showimage" style="z-index:9999;position:fixed;width:322px;left:100px;top:120px;">
+        <script>
+            function closeWin() {
+                var chk = document.getElementById('Notice')
+                if (chk.checked) {
+                    setCookie("Notice", "done", 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+                }
+            }
+            if (getCookie("Notice") == "done") {
+                hidebox();
+            }
+
+        </script>
+
+        <div class="popupImg">
+            <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.</p>
+            <div style="font-size:12px;text-align:center;color:#666;">
+                <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+                <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/box_animate.js"></script>
+</body>
+
+</html>
