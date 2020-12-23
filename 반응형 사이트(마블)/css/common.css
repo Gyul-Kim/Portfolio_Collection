@@ -1,0 +1,156 @@
+/* Reset CSS  */
+@charset "utf-8";
+
+/*font*/
+
+/*
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url(http://areum1020.cafe24.com/font/NanumGothic-Regular.eot);
+    src: url(http://areum1020.cafe24.com/font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+        url(http://areum1020.cafe24.com/font/NanumGothic.woff) format('woff'),
+        url(http://areum1020.cafe24.com/font/NanumGothic-Regular.ttf) format('truetype');
+}
+*/
+
+
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;-moz-text-size-adjust:none;font-family: 'Nanum Gothic', sans-serif;}
+body {font-family: 'Nanum Gothic', sans-serif;font-size:14px; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video { border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle;appearance: none;-webkit-appearance: none;-webkit-border-radius: 0;border-style: none;}
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+
+.hidden{position: absolute; left: -1000px; top:0; display: block; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/*layout*/
+#wrap{width: 100%;height: 100%;overflow: hidden;}
+
+/*header*/
+#headerWrap{width: 100%;height: 110px;position: fixed;top: 0;left: 0;z-index: 100;}
+#headerWrap .headerInner{width: 100%;height: 110px;}
+#headerWrap .headerInner .headerTop{width: 100%;height: 70px;background-color: rgba(35,31,32,0.8);position: relative;}
+
+/*header icons*/
+.headerTop .headerIcons{width: 100%;height: 50px;margin: 10px 0;position: absolute;top: 0;left: 0;}
+.headerTop .headerIcons .iconInner{width: 220px;height: 30px;float: left;margin-left: 15px;margin-bottom: 5px;}
+.headerTop .headerIcons .iconInner a{display: block;width: 25px;height: 25px;float: left;margin: 0 12.5px;font-size: 25px;color: #aa9393;text-align: center;padding: 2.5px;}
+
+.headerTop .headerIcons .searchIcon{float: right;margin-right: 15px;display: none;width: 20px;height: 20px;font-size: 20px;color: #422229;text-align: center;padding: 5px;}
+
+
+/*header links*/
+.headerTop .headerIcons .links{clear: both;overflow: hidden;margin-left: 30px;}
+.headerIcons .links a{position: relative;display: inline-block;color: #aa9393;margin-left: 6px;margin-right: 2px;font-size: 10px;}
+.headerIcons .links a:after{display: block;position: absolute;left: -6px;top: 2px;width: 1px;height: 8px;background-color: #aa9393;content: "";}
+.headerIcons .links a:first-child:after{display: none;}
+.headerIcons .links a:last-child{margin-right: 0px;}
+
+/*header logo*/
+.headerTop #logo{width: 300px;height: 70px;position: absolute;left: 50%;margin-left: -150px;}
+#logo a{display: block;width: 213px;height: 34px;padding: 18px 43.5px;}
+#logo a .logo_pc{display: block;width: 213px;height: 34px;}
+#logo a .logo_m{width: 213px;height: 34px;display: none;}
+
+/*header search*/
+.headerTop .searchPc{position: absolute;top: 20px;right: 15px;}
+.headerTop .searchPc .searchBox{width: 200px;height: 30px;border: 2px solid #aa9393;box-sizing: border-box;}
+.searchPc .searchBox .typeText{display: block;width: 161px;height: 26px;float: left;padding-left: 5px;}
+.searchPc .searchBox .submitBtn{background: #fff url(../images/btn_search.png) 0 0 no-repeat;width: 30px;height: 26px;float: right;cursor: pointer;}
+.searchPc .searchBox .submitBtn .typeBtn{text-indent: -9999px;}
+
+.headerTop .searchMobile{position: absolute;top: 60px;left: 0;width: 100%;height: 50px;z-index: 120;display: none;}
+.searchMobile .searchBoxM{width: 100%;height: 50px;background-color: rgba(255,255,255,0.9);}
+.searchMobile .searchBoxM .bgSearch{width: 100%;height: 50px;}
+.searchMobile .searchBoxM .bgSearch .wrapBox{float: left;width: 85%;height: 30px;border: 2px solid #aa9393;box-sizing: border-box;margin: 10px 0 0 4%;}
+.searchMobile .searchBoxM .bgSearch .closeBtn{cursor: pointer;float: right;margin: 10px 1% 0 0;width: 20px;height: 20px;font-size: 20px;color: #422229;text-align: center;padding: 5px;}
+.searchMobile .searchBoxM .typeText{display: block;width: 85%;height: 26px;float: left;padding-left: 5px;box-sizing: border-box;}
+.searchMobile .searchBoxM .typeBtn{display: block;width: 15%;height: 26px;float: right;cursor: pointer;background-color: #aa9393;color: #231f20;font-weight: 600;}
+
+
+/*headerbottom - GNB*/
+#headerWrap .headerInner .headerBottom{width: 100%;height: 50px;background-color: #231f20;display: none;}
+.headerBottom #gnb{width: 100%;height: 50px;}
+.headerBottom #gnb ul{}
+.headerBottom #gnb ul li{width: 33.33%;height: 50px;float: left;}
+.headerBottom #gnb ul li a{display: block;color: #aa9393;text-align: center;font-weight: 600;width: auto;height: auto;font-size: 13px;padding: 15px 5px;}
+
+/*footer*/
+#footerWrap{clear: both;width: 100%;height: 130px;background-color: #231f20;overflow: hidden;margin-top: 50px;}
+#footerWrap .footerInner{width: 100%;height: 130px;}
+#footerWrap .footerInner .footerMenu{text-align: center;padding: 10px 0;}
+#contentsM #footerWrap .footerInner .footerMenu a{position: relative;display: inline-block;color: #aa9393;font-size: 11px;height: 12px;margin-left: 11px;margin-right: 7px;}
+#footerWrap .footerInner .footerMenu a:after{display: block;position: absolute;left: -10px;top: 1px;width: 1px;height: 10px;background-color: #aa9393;content: "";}
+#footerWrap .footerInner .footerMenu a:first-child{margin-left: 10px;}
+#footerWrap .footerInner .footerMenu a:first-child:after{display: none;}
+#footerWrap .footerInner .copyright{padding: 10px;}
+#footerWrap .footerInner .copyright address{color: #aa9393;font-size: 11px;text-align: center;line-height: 1.5em;}
+#footerWrap .footerInner .copyright p{color: #aa9393;font-size: 11px;text-align: center;line-height: 2em;}
+
+/*media screen-------------------------------------*/
+@media screen and (min-width: 1001px) {
+    #footerWrap{display: none;}
+    .headerTop .searchMobile{display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    #footerWrap{display: none;}
+    .headerTop .searchMobile{display: none;}
+
+}
+
+@media screen and (max-width: 768px) {
+    #headerWrap .headerInner .headerTop{height: 60px;background-color: #fff;}
+    .headerTop .headerIcons{height: 30px;margin: 15px 0;}
+    .headerTop .headerIcons .iconInner{width: 160px;}
+    .headerTop .headerIcons .iconInner a{margin: 0 3px;color: #422229;}
+
+    .headerTop .headerIcons .searchIcon{display: block;}
+    .headerTop .headerIcons .links{display: none;}
+    .headerTop #logo{width: 200px;height: 60px;margin-left: -100px;}
+    #logo a{width: 157px;height: 25px;padding: 17.5px 21.5px;}
+    #logo a .logo_pc{display: none;}
+    #logo a .logo_m{display: block;width: 157px;height: 25px;}
+    .headerTop .searchPc{display: none;}
+    #headerWrap .headerInner .headerBottom{display: block;}
+    .menu{display: none;}
+    
+    
+
+    
+}
+
+@media screen and (max-width: 640px) {
+    .headerTop .headerIcons{}
+    .headerTop .headerIcons .iconInner{} 
+    .headerTop .headerIcons .iconInner a{margin: 0 5px;}
+    .headerTop #logo{position: absolute;top: 0;left: 0;margin-left: 0px;}
+    .headerTop .headerIcons .iconInner{float: right;}
+    .headerTop .headerIcons .searchIcon{margin-left: 5px;}
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    #headerWrap{height: 130px;}
+    #headerWrap .headerInner{height: 130px;}
+    #headerWrap .headerInner .headerTop{height: 80px;}
+    .headerTop .headerIcons{width: 200px;height: 30px;margin: 5px 0;position: absolute;top: 0;left: 50%;margin-left: -100px;}
+    .headerTop .headerIcons .iconInner{width: 160px;margin-left: 0px;}
+    .headerTop .headerIcons .searchIcon{margin-right: 5px;}
+    .headerTop #logo{position: absolute;top: 30px;left: 50%;margin-left: -100px;width: 200px;height: 50px;}
+    #logo a{padding: 12.5px 21.5px;}
+    .headerTop .searchMobile{position: absolute;top: 80px;left: 0;}
+
+
+    
+}
