@@ -1,6 +1,6 @@
 var 가로 = 4;
 var 세로 = 3;
-var 색깔들 = ['red', 'red', 'orange', 'orange', 'green', 'green', 'yellow', 'yellow', 'white', 'white', 'pink', 'pink'];
+var 색깔들 = ['#8A0829', '#8A0829', '#5882FA', '#5882FA', '#01DF01', '#01DF01', '#9F81F7', '#9F81F7', '#F8ECE0', '#F8ECE0', '#FA5858', '#FA5858'];
 var 색깔후보 = 색깔들.slice(); // 백업변수, 참조관계가 되기 때문에 끊어야한다.
 // 객체의 경우, 대입을 하게 되면 참조관계가 된다.
 var 색깔 = [];
@@ -15,7 +15,6 @@ function 셔플() { // 피셔에이츠 셔플
     }
 }
 
-console.log(색깔);
 
 function 카드세팅(가로, 세로) {
     클릭플래그 = false;
@@ -36,7 +35,7 @@ function 카드세팅(가로, 세로) {
         cardInner.appendChild(cardFront);
         cardInner.appendChild(cardBack);
         card.appendChild(cardInner);
-        (function (c) {
+        (function (c) { // 클로저 문제 해결
             card.addEventListener('click', function() {
                 if (클릭플래그 && !완성카드.includes(c)) {
                     c.classList.toggle('flipped');
@@ -56,7 +55,7 @@ function 카드세팅(가로, 세로) {
                                 색깔후보 = 색깔들.slice();
                                 색깔 = [];
                                 완성카드 = [];
-                                시작시간;
+                                시작시간 = null;
                                 셔플();
                                 카드세팅(가로, 세로);
                             }
@@ -73,23 +72,23 @@ function 카드세팅(가로, 세로) {
                     }
             }); // 스코프나 클로저 문제 발생할 확률 높음
         })(card);        
-        document.body.appendChild(card);
+        document.querySelector('#wrapper').appendChild(card);
     }
     
     document.querySelectorAll('.card').forEach(function (card, index) {
         setTimeout(function() {
             card.classList.add('flipped');
-        }, 1000 + 1000 * index);
+        }, 1000 + 100 * index);
     });
-}
 
-setTimeout(function() {
-    document.querySelectorAll('.card').forEach(function (card, index) {
+setTimeout(function() { // 카드 감추기
+    document.querySelectorAll('.card').forEach(function (card) {
         card.classList.remove('flipped');
     });
     클릭플래그 = true;
     시작시간 = new Date();
-}, 5000);
+    }, 5000);
+}
 
 셔플();
 카드세팅(가로, 세로);
