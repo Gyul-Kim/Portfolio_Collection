@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자스스톤</title>
+    <style>
+        #my, #rival {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 50px;
+        }
+        
+        .turn {
+            border: 1px solid #2E2EFE;
+        }
+        
+        #rival {
+            vertical-align: bottom;
+        }
+        
+        #my-deck, #rival-deck {
+            display: inline-block;
+            vertical-align: top;
+            width:  300px;
+            background: #6E6E6E;
+        }
+        
+        #rival-deck, #rival-hero, #rival-cards, #my-cards, #my-deck, #my-hero {
+            text-align: center;
+        }
+        
+        .card {
+            width: 75px;
+            height: 120px;
+            display: inline-block;
+            position: relative;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+            background: #fff;
+            
+        }
+        
+        .card-name {
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .card-att, card-hp, card-cost {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            border: 1px solid #000;
+            bottom: 0;
+        }
+        
+        .card-cost {
+            bottom: auto;
+            top: 0;
+            left: 0;
+            background-color: ##0040FF;
+            color: #fff;
+        }
+        
+        .card-att {
+            left: 0;
+            background-color: #F4FA58;
+        }
+        
+        .card-hp {
+            right: 0;
+            color: #fff;
+            background-color: #B40404;
+        }
+        
+        .card-hidden {
+            display: none;
+        }
+        
+        .card-selected {
+            border: 2px solid #B40404;
+        }
+        
+        .card-turnover {
+            background: #424242;
+        }
+        
+        #turn-btn {
+            float: right;
+            position: relative;
+            top: -23px;
+        }
+    </style>
+</head>
+<body>
+<div id="rival">
+    <div>코스트 :
+        <span id="rival-coast">10</span>/
+        <span>10</span>
+    </div>
+    <div id="rival-hero"></div>
+    <div id="rival-cards" style="height: 150px"></div>
+</div>  
+<div id="rival-deck">
+    <div>덱</div>
+</div>
+
+<hr />
+<button id="turn-btn">턴넘기기</button>
+<div id="my" class="turn">
+    <div id="my-cards" style="height: 150px">
+        
+        
+    </div>
+    <div id="my-hero"></div>
+    <div>코스트 :
+        <span id="my-coast">10</span>/
+        <span>10</span>
+    </div>
+</div>
+   
+    <div id="my-deck">
+        <div>덱</div>
+    </div>
+    <div class="card-hidden">
+        <div class="card">
+            <div class="card-cost"></div>
+            <div class="card-att"></div>
+            <div class="card-hp"></div>
+        </div>
+    </div>
+<script src="12.jass-stone.js"></script>
+<div>붉은색이 체력, 황금색이 공력력, 적 영웅의 체력이 0이 되면 승리한다!
+영웅을 보호하기 위해 쫄병들을 cost(푸른색) 내에서 뽑을 수 있다</div>
+</body>
+</html>
