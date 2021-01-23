@@ -8,47 +8,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <style>
-        #tetris {
+         <style>
+        #tetris, #next-table {
             border-collapse: collapse;
         }
-        
-        #tetris td{
+        #next-table {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        #tetris td {
             border: 1px solid #000;
             width: 30px;
             height: 30px;
-            }
-        
-       td.white {
-            background-color: ;
+        }
+        #next-table td {
+            border: 1px solid #000;
+            width: 15px;
+            height: 15px;
+        }
+        td.white {
+            background-color: #fff;
         }
         td.red {
-            background-color: '#B40404';
+            background-color: #DF0101;
         }
         td.blue {
-            background-color: #013ADF;
+            background-color: #0080FF;
         }
         td.orange {
             background-color: #FF8000;
         }
         td.green {
-            background-color: green;
+            background-color: #088A08;
         }
         td.navy {
-            background-color: navy;
+            background-color: #0404B4;
         }
         td.violet {
-            background-color: violet;
+            background-color: #642EFE;
         }
         td.yellow {
-            background-color: yellow;
+            background-color: #FFFF00;
         }
         td.black {
-            background-color: black;
+            background-color:#000;
         }
     </style>
 </head>
 <body>
-    <table id="tetris"></table>
+    <table id="tetris">
+    </table>
+    <table id="next-table">
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+    <button id="stop">중단</button>
+    <button id="start">재개</button>
+    <button id="mute">소리끔</button>
+    <div>점수: <span id="score">0</span></div>
+    <audio id="bgm" src="./Tetris_theme.ogg.mp3" autoplay></audio>
     <script src="14.tetris.js"></script>
 </body>
 </html>
